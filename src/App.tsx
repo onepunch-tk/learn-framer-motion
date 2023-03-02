@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import {FlexBox} from "./styles/modules";
 import ChapterOne from "./view/components/ChapterOne";
+import ChapterTwo from "./view/components/ChapterTwo";
+import ChapterThree from "./view/components/ChapterThree";
 
 const Wrapper = styled(FlexBox)`
   height: 100vh;
@@ -19,7 +21,7 @@ function App() {
 
     return (
         <Wrapper>
-            <ChapterOne/>
+            <ChapterThree/>
         </Wrapper>
     )
 }
