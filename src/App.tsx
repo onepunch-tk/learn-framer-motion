@@ -1,4 +1,4 @@
-import {GlobalStyle} from "./reset-css";
+import {GlobalStyle} from "./styles/reset-css";
 
 function App() {
 
