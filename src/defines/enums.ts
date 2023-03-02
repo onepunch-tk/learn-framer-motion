@@ -1,7 +1,8 @@
 export const enum EVariantsLabels {
     hover="hover",
     init="init",
-    finish="finish",
+    animate="animate",
     tap="tab",
-    drag="drag"
+    drag="drag",
+    transition = "transition",
 }
