@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import {motion, Variants} from "framer-motion";
+import { Box } from "../../styles/modules";
 
-const Box = styled(motion.div)`
-  width: 200px;
-  height: 200px;
+const Container = styled(Box)`
   background-color: rgba(255,255,255,0.2);
-  border-radius: 30px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.6);
   display: grid;
   grid-template-columns: repeat(2,1fr);
 `;
@@ -61,7 +58,7 @@ const itemVariants:Variants = {
 
 function ChapterThree() {
     return (
-        <Box
+        <Container
             variants={containerVariants}
             initial="init"
             animate="finish"
@@ -70,7 +67,7 @@ function ChapterThree() {
             <Circle variants={itemVariants}/>
             <Circle variants={itemVariants}/>
             <Circle variants={itemVariants}/>
-        </Box>
+        </Container>
     );
 }
 
