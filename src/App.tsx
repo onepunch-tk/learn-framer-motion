@@ -5,9 +5,10 @@ import ChapterThree from "./view/components/ChapterThree";
 import ChapterFour from "./view/components/ChapterFour";
 import {FlexBox} from "./styles/modules";
 import ChapterFive from "./view/components/ChapterFive";
+import ChapterSix from "./view/components/ChapterSix";
 
 const Wrapper = styled(FlexBox)`
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
   background: linear-gradient(135deg, #e09, #d0e);
 `;
@@ -21,7 +22,7 @@ function App() {
 
     return (
         <Wrapper>
-            <ChapterFive/>
+            <ChapterSix/>
         </Wrapper>
     )
 }
