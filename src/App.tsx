@@ -3,14 +3,16 @@ import ChapterOne from "./view/components/ChapterOne";
 import ChapterTwo from "./view/components/ChapterTwo";
 import ChapterThree from "./view/components/ChapterThree";
 import ChapterFour from "./view/components/ChapterFour";
-import {FlexBox} from "./styles/modules";
+import {FlexBox, FlexBox_Column} from "./styles/modules";
 import ChapterFive from "./view/components/ChapterFive";
 import ChapterSix from "./view/components/ChapterSix";
 import ChapterSeven from "./view/components/ChapterSeven";
+import ChapterEight from "./view/components/ChapterEight";
 
-const Wrapper = styled(FlexBox)`
+const Wrapper = styled(FlexBox_Column)`
   height: 100vh;
   width: 100vw;
+  
   background: linear-gradient(135deg, #e09, #d0e);
 `;
 
@@ -23,7 +25,7 @@ function App() {
 
     return (
         <Wrapper>
-            <ChapterSeven/>
+            <ChapterEight/>
         </Wrapper>
     )
 }
