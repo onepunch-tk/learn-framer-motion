@@ -1,13 +1,14 @@
+import {FlexBox_Column} from "./styles/modules";
 import styled from "styled-components";
 import ChapterOne from "./view/components/ChapterOne";
 import ChapterTwo from "./view/components/ChapterTwo";
 import ChapterThree from "./view/components/ChapterThree";
 import ChapterFour from "./view/components/ChapterFour";
-import {FlexBox, FlexBox_Column} from "./styles/modules";
 import ChapterFive from "./view/components/ChapterFive";
 import ChapterSix from "./view/components/ChapterSix";
 import ChapterSeven from "./view/components/ChapterSeven";
 import ChapterEight from "./view/components/ChapterEight";
+import ChapterNine from "./view/components/ChapterNine";
 
 const Wrapper = styled(FlexBox_Column)`
   height: 100vh;
@@ -25,7 +26,7 @@ function App() {
 
     return (
         <Wrapper>
-            <ChapterEight/>
+            <ChapterNine/>
         </Wrapper>
     )
 }
