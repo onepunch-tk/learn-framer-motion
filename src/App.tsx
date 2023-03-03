@@ -9,6 +9,7 @@ import ChapterSix from "./view/components/ChapterSix";
 import ChapterSeven from "./view/components/ChapterSeven";
 import ChapterEight from "./view/components/ChapterEight";
 import ChapterNine from "./view/components/ChapterNine";
+import ChapterTen from "./view/components/ChapterTen";
 
 const Wrapper = styled(FlexBox_Column)`
   height: 100vh;
@@ -26,7 +27,7 @@ function App() {
 
     return (
         <Wrapper>
-            <ChapterNine/>
+            <ChapterTen/>
         </Wrapper>
     )
 }
