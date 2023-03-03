@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import styled from "styled-components";
-import {Box, FlexBox} from "../../styles/modules";
 import {AnimatePresence, delay, motion, Variants} from "framer-motion";
 
 const enum EVarLabels {
@@ -9,14 +8,18 @@ const enum EVarLabels {
     exit = "exit"
 }
 
-const Wrapper = styled(FlexBox)`
+const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 `;
 
-const Item = styled(Box)`
-  //transform-origin: left top;
+const Item = styled(motion.div)`
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +78,7 @@ function FinalExample() {
     return (
         <>
             <AnimatePresence>
-            <Wrapper key={"wrapper"}>
+            <Grid key={"wrapper"}>
                 {itemList.map(({id, originDirection}) =>
                     <Item
                         key={id}
@@ -89,7 +92,7 @@ function FinalExample() {
                         {moveIndex === id && <MoveCircle layoutId="moveId"/>}
                     </Item>
                 )}
-            </Wrapper>
+            </Grid>
             <button onClick={() => setMoveIndex(prev => prev === 3 ? 0 : prev + 1)}>
                 Switch
             </button>

@@ -15,7 +15,6 @@ import FinalExample from "./view/components/FinalExample";
 const Wrapper = styled(FlexBox_Column)`
   height: 100vh;
   width: 100vw;
-  
   background: linear-gradient(135deg, #e09, #d0e);
 `;
 
